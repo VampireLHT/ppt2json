@@ -1,8 +1,10 @@
 {
   "name": "ppt2json",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
+    "watch": "nodemon --exec babel-node --presets env ./bin/www",
+    "dev": "babel-node ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -11,6 +13,13 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "pptx-compose": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.7"
   }
 }
